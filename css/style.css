@@ -32,12 +32,18 @@ body {
     color: white;
     font-weight: bold;
     line-height: 100px;
-    display: inline;
+    /* display: inline-block; */
     padding: 10px 40px;
     margin-right: 20px;
     border: 1px solid white;
     border-radius: 50px;
 }
+
+.upgrade-btn:hover {
+    transform: scale(.5);
+    cursor: pointer;
+}
+
 
 @media screen and (max-width: 600px) {
     .upgrade-bar {

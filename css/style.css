@@ -7,6 +7,8 @@
 
 /* Desktop first */
 
+
+/* COMMON */
 body {
     font-family: 'Montserrat', sans-serif;
 }
@@ -16,7 +18,44 @@ body {
     width: 100%;
 }
 
-/* FIXED BAR */
+
+/* Lists */
+ul {
+    list-style-type: none;
+    padding-top: 10px;
+}
+
+li {
+    padding: 10px 20px;
+}
+
+li:hover {
+    border-left: 3px solid green;
+    padding: 10px 17px;
+}
+
+a {
+    text-decoration: none;
+    color: #a3a3a3;
+    padding-left: 5px;
+}
+
+a:hover {
+    color: white;
+}
+
+
+/* Icons */
+.fa-solid {
+    padding-right: 7px;
+}
+
+
+
+
+
+
+/* ----------------------FIXED BAR........................ */
 .upgrade-bar {
     height: 100px;
     width: calc(100% - 300px);
@@ -25,22 +64,21 @@ body {
     top: 0;
     right: 0;
     text-align: right;
-
 }
 
 .upgrade-btn {
     color: white;
+    font-size: 15px;
     font-weight: bold;
-    line-height: 100px;
-    /* display: inline-block; */
+    display: inline-block;
     padding: 10px 40px;
-    margin-right: 20px;
+    margin: 28px 28px;
     border: 1px solid white;
     border-radius: 50px;
 }
 
 .upgrade-btn:hover {
-    transform: scale(.5);
+    transform: scale(1.2);
     cursor: pointer;
 }
 
@@ -50,6 +88,10 @@ body {
         width: calc(100% - 70px);
     }
 }
+/* ---------------------end FIXED BAR.................... */
+
+
+
 
 
 
@@ -61,12 +103,89 @@ main {
     overflow: hidden;
 }
 
+
+
+
 .main-nav {
     height: 100%;
     width: 300px;
     float: left;
     background-color: black;
+    
+    font-weight: bold;
 }
+
+.logo {
+    height: 100px;
+    line-height: 100px;
+    padding-left: 20px;
+
+}
+
+.img-large {
+    height: 60px;
+    vertical-align: middle;
+    /* display: block; */
+}
+
+.img-small {
+    display: none;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    .main-nav {
+        padding-left: 0;
+    }
+    
+    li {
+        text-align: center;
+    }
+    
+    li span {
+        display: none;
+    }
+
+    .fa-solid {
+        padding-right: 0px;
+        font-size: 25px;
+    }
+
+    .logo {
+        text-align: center;
+        padding-left: 0px;
+    }
+    .img-large {
+        display: none;
+    }
+
+    .img-small {
+        display: inline-block;
+        height: 40px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .main-content {
     height: 100%;
@@ -114,3 +233,16 @@ footer {
     overflow: hidden;
     background-color: #282828;
 }
+
+
+
+
+
+
+
+
+
+
+
+/* bottone upgrade è uno span, line-height per centrarlo, ma transform scale non funziona
+ho dovuto togliere line-height, mettere il display:inline-block e centrare approsimativamente col margin */

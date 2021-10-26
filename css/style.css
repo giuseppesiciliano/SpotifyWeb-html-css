@@ -10,3 +10,54 @@
 body {
     font-family: 'Montserrat', sans-serif;
 }
+
+.app-wrapper {
+    height: 100vh;
+    width: 100%;
+}
+
+
+
+
+
+
+/* MAIN */
+main {
+    height: calc(100% - 100px);
+    width: 100%;
+    overflow: hidden;
+
+    /* background-color: crimson; */
+}
+
+.main-nav {
+    height: 100%;
+    width: 300px;
+    float: left;
+
+    background-color: yellow;
+}
+
+.main-content {
+    height: 100%;
+    width: calc(100% - 300px);
+    float: left;
+
+    background-color: crimson;
+}
+
+
+
+
+
+
+
+
+/* FOOTER */
+footer {
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+
+    background-color: aqua;
+}

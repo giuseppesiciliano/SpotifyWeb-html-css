@@ -533,11 +533,20 @@ footer {
     width: 14px;
     background-color: white;
     border-radius: 50%;
+    display: none;
 }
 
-.range-bar:hover {
-    background-color: #7cff55;
+/* Hover range-bar */
+.range.right:hover {
     cursor: pointer;
+}
+
+.range.right:hover .range-bar {
+    background-color: #7cff55;
+}
+
+.range.right:hover .circle {
+    display: block;
 }
 /* -----------------------------------end COL-RIGHT */
 

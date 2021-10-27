@@ -257,7 +257,7 @@ h3 {
         display: none;
     }
 
-    .fa-solid {
+    .main-nav .fa-solid {
         padding-right: 0px;
         font-size: 25px;
     }
@@ -325,7 +325,6 @@ h3 {
 
 
 /* Actions */
-
 .actions {
     text-align: center;
 }
@@ -337,16 +336,23 @@ h3 {
 }
 
 
+/* Recently Played */
+.recently-played {
+    color: white;
+}
 
+.container-albums {
+    display: flex;
+}
 
+.album {
+    text-align: center;
+}
 
-
-
-
-
-
-
-
+.album img {
+    height: 200px;
+}
+/* ----------------------------------end Main Content */
 
 
 
@@ -400,16 +406,14 @@ footer {
 /* -------------------------------------COL-LEFT */
 .col-left {
     display: flex;
-
-    background-color: sandybrown;
 }
 
-.album {
+.pic-album {
     display: flex;
     align-items: center;
 }
 
-.album img {
+.pic-album img {
     height: 75px;
     padding-right: 20px;
 }
@@ -432,14 +436,13 @@ footer {
 
 
 
+
 /* -------------------------------------COL-CENTRAL */
 .col-central {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
     flex-grow: 1;
-    background-color: seagreen;
 }
 
 /* Play-Nav */
@@ -466,13 +469,11 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    /* width: 300px;
-    background-color: sandybrown; */
+    width: 70%;
 }
 
 .range.play {
-    width: 400px;
+    width: 40%;
 }
 
 .min-sec {
@@ -488,12 +489,11 @@ footer {
 
 
 
+
 /* ---------------------------------------COL-RIGHT */
 .col-right {
     display: flex;
     justify-content: flex-end;
-
-    background-color: slateblue;
 }
 
 .right-icons {
@@ -522,6 +522,7 @@ footer {
     width: 25%;
     background-color: #c1c1c1;
     position: relative;
+    border-radius: 3px;
 }
   
 .circle {

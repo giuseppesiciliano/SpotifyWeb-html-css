@@ -18,16 +18,22 @@ body {
     width: 100%;
 }
 
+.clearfix {
+    display: table;
+    content: "";
+    clear: both;
+}
+
 
 /* Lists */
 ul {
     list-style-type: none;
-    padding-top: 10px;
 }
 
 a {
     text-decoration: none;
     color: #a3a3a3;
+    font-weight: bold;
 }
 
 a:hover {
@@ -94,7 +100,7 @@ main {
 
 
 
-/* Main Nav */
+/* ----------------------------------------------Main Nav */
 .main-nav {
     height: 100%;
     min-height: 500px;
@@ -106,6 +112,11 @@ main {
     display: flex;
     flex-direction: column;
 }
+
+.main-nav ul {
+    padding-top: 10px;
+}
+
 
 
 
@@ -222,8 +233,6 @@ h3 {
 }
 
 
-
-
 @media screen and (max-width: 600px) {
     .main-nav {
         padding-left: 0;
@@ -294,8 +303,8 @@ h3 {
     .user-profile span {
         display: none;
     }
-
 }
+/* ------------------------------------------end Main Nav */
 
 
 
@@ -303,17 +312,7 @@ h3 {
 
 
 
-
-
-
-
-
-
-
-
-
-
-/* Main Content */
+/* -----------------------------------------Main Content */
 .main-content {
     height: 100%;
     width: calc(100% - 250px);
@@ -321,8 +320,38 @@ h3 {
     overflow-y: auto;
     background-color: #141922;
 
-    padding-top: 100px;
+    padding-top: 120px;
 }
+
+
+/* Actions */
+
+.actions {
+    text-align: center;
+}
+
+.actions li {
+    display: inline-block;
+    padding: 0 30px;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media screen and (max-width: 600px) {
@@ -351,9 +380,7 @@ h3 {
 
 
 
-
-
-/* FOOTER */
+/* ------------------------FOOTER------------------------- */
 footer {
     height: 100px;
     width: 100%;
@@ -361,9 +388,48 @@ footer {
     background-color: #282828;
 }
 
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* Col-left */
+.col-left {
+    background-color: aqua;
+    width: 400px;
+    height: 100px;
+    vertical-align: middle;
+}
+
+.album div {
+    float: left;
+}
+
+.album img {
+    height: 75px;
+    float: left;
+}
 
 
 
+
+
+
+
+
+
+
+
+.col-central {
+    background-color: pink;
+    flex-grow: 1;
+}
+
+.col-right {
+    background-color: green;
+    width: 400px;
+}
 
 
 

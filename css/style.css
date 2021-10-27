@@ -332,7 +332,7 @@ h3 {
 
 .actions li {
     display: inline-block;
-    padding: 0 30px;
+    padding: 0 25px;
     font-size: 14px;
 }
 
@@ -391,6 +391,7 @@ footer {
 .container {
     display: flex;
     justify-content: space-between;
+    height: 100px;
 }
 
 
@@ -398,19 +399,20 @@ footer {
 .col-left {
     background-color: aqua;
     width: 400px;
-    height: 100px;
-    vertical-align: middle;
 }
 
-.album div {
-    float: left;
+.album {
 }
 
 .album img {
     height: 75px;
     float: left;
+
 }
 
+.album div {
+    float: left;
+}
 
 
 

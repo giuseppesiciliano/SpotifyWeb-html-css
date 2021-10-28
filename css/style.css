@@ -343,15 +343,20 @@ h3 {
 
 .container-albums {
     display: flex;
+    width: 100%;
 }
 
 .album {
+    background-color: pink;
+    width: calc(100% / 6);
     text-align: center;
 }
 
 .album img {
-    height: 200px;
+    /* height: 200px; */
 }
+
+
 /* ----------------------------------end Main Content */
 
 

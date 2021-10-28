@@ -350,7 +350,6 @@ h2 {
 .container-albums {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 30px;
 }
 
 
@@ -364,6 +363,7 @@ h2 {
 .album img {
     width: 100%;
     /* max-width: 250px; */
+    padding-top: 30px;
 }
 
 .album-cover {
@@ -400,12 +400,30 @@ h2 {
     font-weight: bold;
     padding-top: 10px;
 }
+
+
+/* Artisti più popolari */
+.img-circle {
+    border-radius: 50%;
+}
 /* ----------------------------------end Main Content */
 
 
 
 
 
+@media screen and (max-width: 1100px) {
+    .album {
+        width: calc(100% / 4);
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    .album {
+        width: calc(100% / 2);
+    }
+}
 
 
 @media screen and (max-width: 600px) {
@@ -531,6 +549,17 @@ footer {
     padding: 0 10px;
 }
 
+.range.play:hover {
+    cursor: pointer;
+}
+
+.range.play:hover .range-bar {
+    background-color: #7cff55;
+}
+
+.range.play:hover .circle {
+    display: block;
+}
 /* ---------------------------------end COL-CENTRAL */
 
 
@@ -561,7 +590,7 @@ footer {
     border-radius: 3px;
 }
 
-.range.right {
+.range.volume {
     width: 100px;
 }
   
@@ -585,15 +614,15 @@ footer {
 }
 
 /* Hover range-bar */
-.range.right:hover {
+.range.volume:hover {
     cursor: pointer;
 }
 
-.range.right:hover .range-bar {
+.range.volume:hover .range-bar {
     background-color: #7cff55;
 }
 
-.range.right:hover .circle {
+.range.volume:hover .circle {
     display: block;
 }
 /* -----------------------------------end COL-RIGHT */

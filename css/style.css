@@ -344,13 +344,15 @@ h3 {
 
 /* Recently Played */
 h2 {
-    padding: 30px 0;
+    padding-top: 30px;
 }
 
 .container-albums {
     display: flex;
     flex-wrap: wrap;
+    padding-top: 30px;
 }
+
 
 /* Album */
 .album {
@@ -361,6 +363,25 @@ h2 {
 
 .album img {
     width: 100%;
+    /* max-width: 250px; */
+}
+
+.album-cover {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    opacity: 0;    
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.overlay:hover {
+    opacity: 1;
 }
 
 .album h4 {
@@ -371,6 +392,14 @@ h2 {
     color: #7d7f84;
 }
 
+
+/* Creato per John Doe */
+.container h5 {
+    font-size: 14px;
+    color: #7d7f84;
+    font-weight: bold;
+    padding-top: 10px;
+}
 /* ----------------------------------end Main Content */
 
 

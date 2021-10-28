@@ -362,7 +362,7 @@ h2 {
 
 .album img {
     width: 100%;
-    /* max-width: 250px; */
+    max-width: 250px;
     padding-top: 30px;
 }
 
@@ -626,13 +626,3 @@ footer {
     display: block;
 }
 /* -----------------------------------end COL-RIGHT */
-
-
-
-
-
-
-
-/* creare un container con padding-left 24px nel main nav */
-
-/* 1) fare apparire il cerchio quando sono con hover nel range */

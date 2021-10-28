@@ -336,26 +336,40 @@ h3 {
 }
 
 
-/* Recently Played */
-.recently-played {
+
+.container {
+    padding: 20px 20px;
     color: white;
+}
+
+/* Recently Played */
+h2 {
+    padding: 30px 0;
 }
 
 .container-albums {
     display: flex;
-    width: 100%;
+    flex-wrap: wrap;
 }
 
+/* Album */
 .album {
-    background-color: pink;
     width: calc(100% / 6);
     text-align: center;
+    padding-right: 20px;
 }
 
 .album img {
-    /* height: 200px; */
+    width: 100%;
 }
 
+.album h4 {
+    padding: 10px 0;
+}
+
+.album h5 {
+    color: #7d7f84;
+}
 
 /* ----------------------------------end Main Content */
 
@@ -401,7 +415,7 @@ footer {
     padding: 0 10px;
 }
 
-.container {
+.container-footer {
     display: flex;
     justify-content: space-between;
     height: 100px;
